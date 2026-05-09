@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Car Showcase</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#000;
+            color:white;
+        }
+
+        header{
+            background:#111;
+            padding:20px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        header h1{
+            color:#00aaff;
+            font-size:35px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin-left:20px;
+            transition:0.3s;
+        }
+
+        nav a:hover{
+            color:#00aaff;
+        }
+
+        .hero{
+            height:100vh;
+            background:url('https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1500&q=80')
+            no-repeat center center/cover;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .hero-content{
+            background:rgba(0,0,0,0.6);
+            padding:40px;
+            border-radius:15px;
+        }
+
+        .hero-content h2{
+            font-size:60px;
+            margin-bottom:15px;
+        }
+
+        .hero-content p{
+            font-size:22px;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:12px 30px;
+            background:#00aaff;
+            color:white;
+            text-decoration:none;
+            border-radius:8px;
+        }
+
+        .cars{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        .cars h2{
+            font-size:40px;
+            margin-bottom:40px;
+        }
+
+        .car-container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .card{
+            background:#111;
+            width:300px;
+            border-radius:15px;
+            overflow:hidden;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+        }
+
+        .card img{
+            width:100%;
+            height:200px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            margin:15px 0;
+        }
+
+        .card p{
+            padding:0 15px 20px;
+        }
+
+        footer{
+            background:#111;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>BMW</h1>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Models</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>BMW M4 Competition</h2>
+        <p>Luxury • Speed • Performance</p>
+        <a href="#" class="btn">Explore</a>
+    </div>
+</section>
+
+<section class="cars">
+    <h2>Popular BMW Cars</h2>
+
+    <div class="car-container">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80">
+            <h3>BMW M3</h3>
+            <p>Sporty sedan with premium design.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80">
+            <h3>BMW X5</h3>
+            <p>Luxury SUV with advanced technology.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80">
+            <h3>BMW i8</h3>
+            <p>Future-ready hybrid sports car.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 BMW Car Website</p>
+</footer>
+
+</body>
+</html>
